@@ -16,18 +16,35 @@
 <body onload="prettyPrint();">
     <h1>Basic</h1>
 
-    <p>Combo box is created with the following one liner:</p>
+    <h3>Combo box is created with the following one liner:</h3>
 
     <pre class="prettyprint">
-    $("input").combobox({ options: ["apple","orange","banana","mangoesteen"] });
+    $("#tb1").combobox({ options: ["apple","orange","banana","mangoesteen"] });
     </pre>
 
     <p>
-        <label for="my-text-box">pick a fruit:</label>
-        <input id="my-text-box" type="text" />
+        <label for="tb1">pick a fruit:</label>
+        <input id="tb1" type="text" />
     </p>
     <script type="text/javascript">
-        $("input").combobox({ options: ["apple", "orange", "banana", "mangoesteen"] });
+        $("#tb1").combobox({ options: ["apple", "orange", "banana", "mangoesteen"] });
+    </script>
+
+    <h3>Define number of visible items</h3>
+
+    <pre class="prettyprint">
+        $("#tb2").combobox({ options: ["January", "February", "March", "April", "May", "June", 
+                                    "July", "August", "September", "October", "November", "December"],
+                            size: 5 });
+    </pre>
+
+    <p>
+        <label for="tb2">pick a fruit:</label>
+        <input id="tb2" type="text" />
+    </p>
+    <script type="text/javascript">
+        $("#tb2").combobox({ options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                            size:5 });
     </script>
 </body>
 </html>
