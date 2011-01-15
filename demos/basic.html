@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery ComboBox</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/prettify/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../external/css/ui-lightness/jquery-ui-1.8.7.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../jquery.combobox.css" />
+    <script type="text/javascript" src="../external/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="../external/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="../external/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="assets/prettify/prettify.js"></script>
+    <script type="text/javascript" src="../jquery.combobox.js"></script>
+</head>
+<body onload="prettyPrint();">
+    <h1>Basic</h1>
+
+    <p>Combo box is created with the following one liner:</p>
+
+    <pre class="prettyprint">
+    $("input").combobox({ options: ["apple","orange","banana","mangoesteen"] });
+    </pre>
+
+    <p>
+        <label for="my-text-box">pick a fruit:</label>
+        <input id="my-text-box" type="text" />
+    </p>
+    <script type="text/javascript">
+        $("input").combobox({ options: ["apple", "orange", "banana", "mangoesteen"] });
+    </script>
+</body>
+</html>
